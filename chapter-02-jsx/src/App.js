@@ -1,13 +1,8 @@
-import {Fragment} from 'react';
+import React from 'react';
 
 function App() {
-    const name = "김가원";
-    return(
-        <>
-            <h1>{name} Hello!</h1>
-            <h2>잘 작동함?</h2>
-        </>
-    )
+    const name = "리액트";
+    return <div>{name === '리액트' && <h1>리액트임.</h1>}</div>
 }
 
 export default App;
