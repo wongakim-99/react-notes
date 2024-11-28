@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import {Fragment} from 'react';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const name = "김가원";
+    return(
+        <>
+            <h1>{name} Hello!</h1>
+            <h2>잘 작동함?</h2>
+        </>
+    )
 }
 
 export default App;
