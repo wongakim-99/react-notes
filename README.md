@@ -28,11 +28,12 @@
 ## 📂 폴더 구조
 
 ```plaintext
-react-study/
-├── public/            # 정적 파일
-│   ├── index.html     # 기본 HTML 템플릿
-├── src/               # 소스 코드
-│   ├── App.js         # 메인 앱 컴포넌트
-│   ├── index.js       # 엔트리 포인트
-├── package.json       # 프로젝트 설정 파일
-└── README.md          # 리드미 파일
+react-notes/
+|── chapter-0x-배울내용
+```
+
+--- 
+
+## 📚 참고 서적
+
+![image](https://github.com/user-attachments/assets/e4c9419b-cd84-4fa9-ad88-891bc823caa1)
