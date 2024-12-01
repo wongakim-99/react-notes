@@ -3,7 +3,7 @@ import MyComponent from "./MyComponent";
 
 const App = () => {
     return (
-        <MyComponent>리액트임</MyComponent>
+        <MyComponent name="React" favoriteNumber={5}>리액트임</MyComponent>
     );
 };
 
