@@ -3,9 +3,7 @@ import MyComponent from "./MyComponent";
 
 const App = () => {
     return (
-        <div>
-          <MyComponent name="react"/>
-        </div>
+        <MyComponent>리액트임</MyComponent>
     );
 };
 
