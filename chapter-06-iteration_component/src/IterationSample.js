@@ -1,13 +1,10 @@
 import React from 'react';
 
 const IterationSample = () => {
+    const names = ['김진교', '김가원', '허준', '김영웅']
+    const nameList = names.map(name => <li>{name}</li>)
     return (
-        <div>
-            <li>김가원</li>
-            <li>허준</li>
-            <li>김영웅</li>
-            <li>김진교</li>
-        </div>
+        <ul>{nameList}</ul>
     );
 };
 
