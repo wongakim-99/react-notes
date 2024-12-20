@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useCallback } from "react";
 
 const getAverage = numbers => {  // 주어진 숫자 배열의 평균을 계산하는 함수
     console.log("평균값 계산 중");
@@ -11,14 +11,15 @@ const Average = () => {
     const [list, setList] = useState([]);  // 입력된 숫자들의 배열 관리
     const [number, setNumber] = useState('');  // 현재 입력된 필드의 값(문자열)관리. 초기값은 빈 문자열
 
-    const onChange = e => {
+    const onChange = useCallback(e => {
         setNumber(e.target.value);
-    };
-    const onInsert = e => {  // 버튼을 클릭하면 호출됨
-        const nextList = list.concat(parseInt(number));  // 현재 입력된 숫자(numbers)를 list 배열에 추가
-        setList(nextList);  // 새로운 배열(nextList)을 생성하여 상태를 업데이트
+    }, []);  // 컴포넌트가 처음 렌더링될 때만 함수 생성
+
+    const onInsert = useCallback(() => {
+        const nextList = list.concat(parseInt(number));
+        setList(nextList);
         setNumber('');
-    };
+    }, [number, list]);  // number 혹은 list 가 바뀌었을 때만 함수 생성
 
     const avg = useMemo(() => getAverage(list), [list]);
 
@@ -35,7 +36,7 @@ const Average = () => {
                 <b>평균값 : </b>{avg}
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Average;
