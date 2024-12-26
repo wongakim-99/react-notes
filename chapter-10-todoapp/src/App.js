@@ -1,10 +1,10 @@
 import React from 'react';
+import TodoTemplate from "./components/TodoTemplate";
 
 const App = () => {
     return (
-        <div>
-          Todo test!!
-        </div>
+        <TodoTemplate>Todo App 테스트
+        </TodoTemplate>
     );
 };
 
