@@ -1,9 +1,11 @@
 import React from 'react';
 import TodoTemplate from "./components/TodoTemplate";
+import TodoInsert from "./components/TodoInsert";
 
 const App = () => {
     return (
-        <TodoTemplate>Todo App 테스트
+        <TodoTemplate>
+            <TodoInsert/>
         </TodoTemplate>
     );
 };
