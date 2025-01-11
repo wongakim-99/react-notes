@@ -1,9 +1,9 @@
 import React from 'react';
-import Say from "./Say";
+import MyComponent from "./MyComponent";
 
 const App = () => {
     return (
-        <Say/>
+        <MyComponent name="황근출" favoriteNumber={3}>박철곤</MyComponent>
     );
 };
 
