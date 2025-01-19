@@ -2,14 +2,15 @@ import React, {useState} from 'react';
 
 const EventPractice = () => {
     const [form, setForm] = useState({
-        username: "",
-        message: "",
-    });
+        username: '',
+        message: '',
+    })
 
     const {
         username,
         message
     } = form;
+
     const onChange = e => {
         const nextForm = {
             ...form,  // 기존의 form 내용을 이 자리에 복사한 뒤
@@ -17,6 +18,7 @@ const EventPractice = () => {
         };
         setForm(nextForm);
     };
+
     const onClick = () => {
         alert(username + " : " + message);
         setForm({
