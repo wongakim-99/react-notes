@@ -1,10 +1,10 @@
 import React from 'react';
-import IterationSample from "./IterationSample";
+import IterationSample2 from "./IterationSample2";
 
 const App = () => {
     return (
         <div>
-          <IterationSample/>
+            <IterationSample2 />
         </div>
     );
 };
